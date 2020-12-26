@@ -27,6 +27,10 @@
 - Run `npm i`
 - Then `npm run build`
 
+### Server Usage
+
+- Set up `.env` file(MONGODB_URL)
+
 That commands put the front-end built in server's public folder
 
 And then just connect and deploy in on Heroku
