@@ -1,5 +1,4 @@
 const express = require('express')
-const cookieParser = require('cookie-parser')
 const cors = require('cors')
 const mongoose = require('mongoose')
 
@@ -15,7 +14,6 @@ require('dotenv').config()
   // Middleware
   app.use(express.json())
   app.use(cors())
-  app.use(cookieParser()) 
 
   // Connect to MongoDB
   await mongoose.connect(process.env.MONGODB_URL, {
